@@ -13,7 +13,7 @@ class Router {
     class func openPage(type:String) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
-        // Handle Deep Link Data to present the Article passed through
+        // Handle Widget passed through
         
         if appDelegate.window?.rootViewController?.isKind(of: UINavigationController.self) ?? false {
             if let navController = appDelegate.window?.rootViewController as? UINavigationController {
